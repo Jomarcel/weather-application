@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <!-- Google Fonts -->
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style/main.css">
+
+    <!-- Scripts -->
+    <!-- <script src=""></script> -->
+</head>
+<body>
+    <main class = "brisbane-current-weather">
+        <h1 class="main-title">Previous 7 days</h1>
+
+        <div class="date"></div>
+        <h2 class="section-title 
+        section-title--date">BrisbaneWeather</h2>
+        <p class="date_day">April 11</p>
+
+        <div class="temperature"></div>
+        <h2 class="section-title">
+            <p class="description">High: 25°</p>
+            <p class="description">Low: 18°</p>
+        </h2>
+        <div class="wind">
+            <h2 class="section-title">Wind</h2>
+            <p class="description">90kph</p>
+
+            <div class="wind_direction">    
+                <p class="screen-reader-only">45 degrees</p>
+                <div class="wind_arrow"></div>
+            </div>
+        </div>
+
+        <div class="info">
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="unit">
+            <label for="cel">°X</label>
+            <input type="radio" id="cel" name="unit">
+            <!-- when unit toggle event is clicked 
+                checkbox needs to change -->
+            <button class="unit_toggle"></button>
+            <label for="fahrenheit">°F</label>
+            <input type="radio" id="fah" name="unit">
+
+        </div>
+    </main>
+
+    <div class="previous-weather"></div>
+    <div class="previous-days">
+        <div class="previous-day">
+            <h3 class="previous-day_bne">day BNE</h3>
+            <div class="previous-day_date">April 31st</div>
+
+            <p class="previous-day_date">April</p>
+            <p class="previous-day_temp">Low: 18°</p>
+            <p class="previous-day_temp">Low: 18°</p>
+            <button class="previous-day_more-info">more info</button>
+        </div>
+    </div>
+
+</body>
+</html>
