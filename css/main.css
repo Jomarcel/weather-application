@@ -45,22 +45,39 @@ body{
 }
 h1, h2 h3 {line-height: 1;}
 
+a {
+  color: var(--clr-accent);
+}
+
+a:hover {
+  color: var(--clr-accent-dark);
+}
+
+
+
 .main-title{
     font-size: var(--fs-h1);
     font-weight: var(--fw-light);
     text-transform: uppercase;
     color: var(--clr-accent);
     letter-spacing: 2px;
-
+    grid-column: 1 / -1;
+    
 }
 .section-title{
     font-size: var(--fs-h2);
     font-weight: var(--fw-bold);
     margin: 0;
+    
 }
 .section-title--date{
     font-size: var(--fs-x1);
 }
+.reading {
+    font-size: var(--fs-h1);
+    margin: 0;
+    color: var(--clr-gray);
+  }
 
 .brisbane-current-weather{
     background: rgba(0, 0, 0, .7);
@@ -69,4 +86,26 @@ h1, h2 h3 {line-height: 1;}
     margin: 4em 0 0 4em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
 }
+
+.date{
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+}
+
+.temp{
+    grid-column: 2/3;
+}
+
+.wind{
+    grid-column: 3/-1;
+}
+.unit{
+    grid-column: 3/-1;
+}
+.info {
+    grid-column: 1/3;
+}
+
